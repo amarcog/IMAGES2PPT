@@ -1,5 +1,7 @@
 ![./LOGO.png](https://github.com/amarcog/IMAGES2PPT/blob/main/www/LOGO.png)
 
+An online version of the **IMAGES2PPT** is available at [shinyapp.io](https://amarcog.shinyapps.io/images2ppt_am/). See bellow for local installation using docker.
+
 Originally, **IMAGES2PPT** was developed to automatically order 
 images from microscopy in powerpoint presentations. However its usage 
 could be applied to any kind of images that have been labeled with a rule that 
@@ -23,6 +25,18 @@ in powerpoint format. **The only requirement is to build this labeling strategy:
 * **Identifier 'ID':** characters encompassed between \_ and the file extension (.ext) that identify the different channels (i.e. blue, red, DAPI, ACTIN etc), magnification (i.e. 5x, 10x, 20x etc) or replica (Rep1, Rep2, Rep4...)
 
 * **File extension '.ext':** the extension of your image files (supported: .tif, .jpg, .png).
+
+## Local installation using Docker
+
+Online version of the app could be slow when uploading big sized images. Alternatively, a docker image is avalilable to run the app locally using docker. Thus, to run IMAGES2PPT app locally follow the next steps:
+
+1. Download and install docker: https://docs.docker.com/engine/installation/ .
+2. Then open a command prompt (Mac) or Powershell (Windows) and run the following command:
+   
+   `docker run -p 7860:7860 amarcogi27/images2ppt_am:v1`
+3. Type in your Google Chrome the next IP direction: `0.0.0.0:7860` or `http://0.0.0.0:7860/`
+
+The app interface will appear in Google Chrome and files will be accessed locally by the app. This will save time issues related to uploading files by internet.
 
 ### Considering this labeling strategy, here there are useful examples for IMAGES2PPT usage:
 
