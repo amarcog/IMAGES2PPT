@@ -34,7 +34,7 @@ Online version of the app could be slow when uploading big sized images. Alterna
 2. Then open a command prompt (Mac) or Powershell (Windows) and run the following command:
    
    `docker run -p 7860:7860 amarcogi27/images2ppt_am:v1`
-3. Type in your Google Chrome the next IP direction: `0.0.0.0:7860` or `http://0.0.0.0:7860/`
+3. Type in your Google Chrome one of the next IP directions: `localhost:7860` or `127.0.0.1:7860` or `http://localhost:7860/` or `http://127.0.0.1:7860/`
 
 The app interface will appear in Google Chrome and files will be accessed locally by the app. This will save time issues related to uploading files by internet.
 
